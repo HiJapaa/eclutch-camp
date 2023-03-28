@@ -1,0 +1,309 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    height: 80vh;
+    padding: 8.5rem 9% 3rem;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    background-color: black;
+    z-index: 10;
+}
+
+.cabecalho .logo {
+    height: 100%;
+}
+
+.cabecalho .bx {
+    color: aliceblue;
+    font-size: 24px;
+}
+
+.cabecalho .navBar ul {
+    display: flex;
+    gap: 10px;
+}
+
+.cabecalho .navBar ul li a {
+    font-size: 18px;
+    color: black;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cabecalho .navBar ul li a {
+    transition: .4s;
+}
+
+.cabecalho .navBar ul li a:hover, .cabecalho .navBar a.ativo {
+    background-color: orangered;
+    color: aliceblue;
+}
+
+#menu-icon {
+    display: none;
+}
+
+
+/* SEEDS */
+
+.jogadores, .times, .semi, .final {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.seed, .times .time, .semi1 .time, .final .time {
+    width: 160px;
+    height: max-content;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid orangered;
+    padding: 20px;
+}
+
+.seed h3, .times .time h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.seed h5 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.seed p, .time p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.seed span, .time span {
+    font-size: 20px;
+    color: darkcyan;
+}
+
+
+.rodape {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+}
+
+.rodape img {
+    height: 100%;
+}
+
+.cuplogo {
+    filter: invert(1);
+}
+
+
+.fase1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.timesx {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.jogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.jogo a {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.jogo .time {
+    text-align: center;
+}
+
+.hora {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border: 2px solid orangered;
+}
+
+.hora h3 {
+    font-size: 24px;
+}
+
+
+.semi1, .final1 {
+    text-align: center;
+}
+
+.semi1 h3, .final1 h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.semi2, .final2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.final {
+    height: 83vh;
+}
+
+.campeao {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.campeao .jogador p:first-child {
+    margin-bottom: 20px;
+}
+
+.celular {
+    display: none;
+}
+
+
+@media (max-width: 1325px) {
+
+    section {
+        height: auto;
+    }
+
+    .times {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .times .time {
+        margin: auto auto;
+    }
+}
+
+@media (max-width: 1210px) {
+
+    .jogadores {
+        gap: 35px 100px;
+    }
+
+    .fase1 {
+        gap: 75px;
+    }
+}
+
+@media (max-width: 810px) {
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navBar {
+        position: absolute;
+        top: 100%;
+        left: 45%;
+        background: black;
+        padding: 1rem 3%;
+        border-radius: 0 0 15px 15px;
+        display: none;
+    }
+
+    .navBar ul {
+        flex-direction: column;
+    }
+
+    .navBar ul li {
+        padding: 5px;
+    }
+
+    .navBar.ativo {
+        display: block;
+    }
+
+    section {
+        height: max-content;
+    }
+
+    .jogadores {
+        gap: 25px;
+    }
+
+    .times, .jogadores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rodape {
+        background-color: black;
+        position: static;
+    }
+
+    .cuplogo {
+        filter: invert(0);
+    }
+
+    .campeao {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .campeao .jogador {
+        padding: 20px;
+        margin: auto auto;
+        border: 2px solid orangered;
+        border-radius: 25px;
+    }
+
+    .celular {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .times .celular {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
