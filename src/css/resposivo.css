@@ -1,0 +1,97 @@
+@media (max-width: 1325px) {
+
+    section {
+        height: auto;
+    }
+
+    .times {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .times .time {
+        margin: auto auto;
+    }
+}
+
+@media (max-width: 1210px) {
+
+    .seeds {
+        gap: 35px 100px;
+    }
+
+    .fase1 {
+        gap: 75px;
+    }
+}
+
+@media (max-width: 810px) {
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navBar {
+        position: absolute;
+        top: 100%;
+        left: 45%;
+        background: black;
+        padding: 1rem 3%;
+        border-radius: 0 0 15px 15px;
+        display: none;
+    }
+
+    .navBar ul {
+        flex-direction: column;
+    }
+
+    .navBar ul li {
+        padding: 5px;
+    }
+
+    .navBar.ativo {
+        display: block;
+    }
+
+    .seeds {
+        gap: 25px;
+    }
+
+    .times, .seeds {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rodape {
+        background-color: black;
+        position: static;
+    }
+
+    .cuplogo {
+        filter: invert(0);
+    }
+
+    .campeao {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .campeao .jogador {
+        padding: 20px;
+        margin: auto auto;
+        border: 2px solid orangered;
+        border-radius: 25px;
+    }
+
+    .celular {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .times .celular {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
