@@ -8,7 +8,7 @@ body {
 }
 
 section {
-    height: 80vh;
+    height: 90vh;
     padding: 8.5rem 9% 3rem;
 }
 
@@ -62,17 +62,18 @@ section {
 }
 
 
-/* SEEDS */
+/* ========== SEEDS ========== */
 
-.jogadores, .times, .semi, .final {
+.seeds {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 25px;
     flex-wrap: wrap;
 }
 
-.seed, .times .time, .semi1 .time, .final .time {
+.seed {
+    display: flex;
+    flex-direction: column;
     width: 160px;
     height: max-content;
     text-align: center;
@@ -81,7 +82,7 @@ section {
     padding: 20px;
 }
 
-.seed h3, .times .time h3 {
+.seed h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -92,55 +93,102 @@ section {
     font-weight: 500;
 }
 
-.seed p, .time p {
+.seed a {
     font-size: 18px;
-    margin-bottom: 5px;
+    padding: 5px 0;
+    color: black;
+    transition: .4s ease-in-out;
 }
 
-.seed span, .time span {
+.seed a:hover {
+    transform: scale(1.05);
+}
+
+.seeds span {
+    font-size: 20px;
+    color: darkcyan;
+    font-weight: 700;
+}
+
+
+/* ========== TIMES ========== */
+
+.times {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.times .time {
+    width: 160px;
+    height: max-content;
+    margin: auto auto;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid orangered;
+    padding: 20px;
+}
+
+.times .time h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.times .time p {
+    font-size: 18px;
+    padding: 5px 0;
+    color: black;
+}
+
+.times .time span {
     font-size: 20px;
     color: darkcyan;
 }
 
 
-.rodape {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-}
-
-.rodape img {
-    height: 100%;
-}
-
-.cuplogo {
-    filter: invert(1);
-}
-
+/* ========== FASE 1 ========== */
 
 .fase1 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
-
-.timesx {
+.fase1 .grupo {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
+}
+
+.fase1 .grupo h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.fase1 .grupo .resultado {
+    text-align: center;
+}
+
+.fase1 .grupo .placar {
+    display: flex;
+    gap: 10px;
+}
+
+.fase1 .hora .jogo p {
+    font-size: 14px;
 }
 
 .jogo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    gap: 10px;
+    margin: 5px;
     padding: 5px 0;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
@@ -150,6 +198,11 @@ section {
     color: black;
     font-size: 18px;
     font-weight: 700;
+    transition: .4s ease-in-out;
+}
+
+.jogo a:hover {
+    transform: scale(1.05);
 }
 
 .jogo .time {
@@ -171,6 +224,88 @@ section {
 }
 
 
+/* ========== FASE 2 ========== */
+
+
+
+.fase2, .final {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.semi1 .time, .final .time {
+    width: 160px;
+    height: max-content;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid orangered;
+    padding: 20px;
+}
+
+.fase2 .resultado h4 {
+    font-size: 20px;
+}
+
+.fase2 .placar {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.time p {
+    font-size: 18px;
+    padding: 5px 0;
+    color: black;
+}
+
+.time span {
+    font-size: 20px;
+    color: darkcyan;
+}
+
+.rodape {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+}
+
+.rodape img {
+    height: 100%;
+}
+
+.cuplogo {
+    filter: invert(1);
+}
+
+.final1 .resultado h6 {
+    font-size: 20px;
+}
+
+.final1 .placar {
+    display: flex;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.final1 .mapa {
+    padding: 10px 0;
+}
+
+.final1 .mapa:nth-child(2) {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+
+
+
 .semi1, .final1 {
     text-align: center;
 }
@@ -184,11 +319,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-}
-
-.final {
-    height: 83vh;
+    gap: 50px;
 }
 
 .campeao {
@@ -201,109 +332,14 @@ section {
     margin-bottom: 20px;
 }
 
+.placar p.v {
+    color: green;
+}
+
+.placar p.d {
+    color: red;
+}
+
 .celular {
     display: none;
-}
-
-
-@media (max-width: 1325px) {
-
-    section {
-        height: auto;
-    }
-
-    .times {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-    }
-
-    .times .time {
-        margin: auto auto;
-    }
-}
-
-@media (max-width: 1210px) {
-
-    .jogadores {
-        gap: 35px 100px;
-    }
-
-    .fase1 {
-        gap: 75px;
-    }
-}
-
-@media (max-width: 810px) {
-
-    #menu-icon {
-        display: block;
-    }
-
-    .navBar {
-        position: absolute;
-        top: 100%;
-        left: 45%;
-        background: black;
-        padding: 1rem 3%;
-        border-radius: 0 0 15px 15px;
-        display: none;
-    }
-
-    .navBar ul {
-        flex-direction: column;
-    }
-
-    .navBar ul li {
-        padding: 5px;
-    }
-
-    .navBar.ativo {
-        display: block;
-    }
-
-    section {
-        height: max-content;
-    }
-
-    .jogadores {
-        gap: 25px;
-    }
-
-    .times, .jogadores {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .rodape {
-        background-color: black;
-        position: static;
-    }
-
-    .cuplogo {
-        filter: invert(0);
-    }
-
-    .campeao {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .campeao .jogador {
-        padding: 20px;
-        margin: auto auto;
-        border: 2px solid orangered;
-        border-radius: 25px;
-    }
-
-    .celular {
-        display: block;
-        text-align: center;
-        font-size: 32px;
-    }
-
-    .times .celular {
-        text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
 }
