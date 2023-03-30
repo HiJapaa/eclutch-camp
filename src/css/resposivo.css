@@ -26,7 +26,12 @@
     }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 835px) {
+
+
+    section {
+        padding: 9rem 6% 3rem;
+    }
 
     #menu-icon {
         display: block;
@@ -55,7 +60,12 @@
     }
 
     .seeds {
+        display: grid;
         gap: 25px;
+    }
+
+    .seed {
+        margin: auto auto;
     }
 
     .times, .seeds {
@@ -81,6 +91,8 @@
         margin: auto auto;
         border: 2px solid orangered;
         border-radius: 25px;
+        text-align: center;
+        width: 200px;
     }
 
     .celular {
@@ -89,9 +101,65 @@
         font-size: 32px;
     }
 
-    .times .celular {
-        text-align: center;
+    .fase1, .final {
+        display: grid;
+    }
+
+    .fase1 .celular, .seeds .celular, .times .celular {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+
+    .seeds .seed:last-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .seeds {
+        display: flex;
+    }
+
+    .fase1 {
+        gap: 20px;
+    }
+
+    .semi2 {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .times {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fase1 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .resultado.pc {
+        display: none;
+    }
+
+    .resultado.cel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .fin.cel {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+
 }

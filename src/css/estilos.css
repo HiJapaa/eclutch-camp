@@ -9,7 +9,7 @@ body {
 
 section {
     height: 90vh;
-    padding: 8.5rem 9% 3rem;
+    padding: 5rem 6% 3rem;
 }
 
 .cabecalho {
@@ -66,23 +66,24 @@ section {
 
 .seeds {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5px;
 }
 
 .seed {
     display: flex;
     flex-direction: column;
-    width: 160px;
+    width: 230px;
     height: max-content;
-    text-align: center;
     border-radius: 25px;
     border: 2px solid orangered;
-    padding: 20px;
+    padding: 10px;
 }
 
 .seed h3 {
+    align-self: center;
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -328,8 +329,17 @@ section {
     justify-content: center;
 }
 
-.campeao .jogador p:first-child {
+.campeao .jogador {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campeao .jogador p:nth-child(2) {
+    text-align: center;
     margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .placar p.v {
@@ -341,5 +351,13 @@ section {
 }
 
 .celular {
+    display: none;
+}
+
+.resultado.cel {
+    display: none;
+}
+
+.wait {
     display: none;
 }
