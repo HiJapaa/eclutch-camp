@@ -12,6 +12,9 @@ section {
     padding: 5rem 6% 3rem;
 }
 
+
+/* ========== CABEÇALHO ========== */
+
 .cabecalho {
     width: 100%;
     height: 10vh;
@@ -180,10 +183,6 @@ section {
     gap: 10px;
 }
 
-.fase1 .hora .jogo p {
-    font-size: 14px;
-}
-
 .jogo {
     display: flex;
     align-items: center;
@@ -193,6 +192,20 @@ section {
     padding: 5px 0;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+}
+
+.hora {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border: 2px solid orangered;
+}
+
+.fase1 .hora .jogo p {
+    font-size: 14px;
 }
 
 .jogo a {
@@ -210,16 +223,6 @@ section {
     text-align: center;
 }
 
-.hora {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-    border: 2px solid orangered;
-}
-
 .hora h3 {
     font-size: 24px;
 }
@@ -227,9 +230,7 @@ section {
 
 /* ========== FASE 2 ========== */
 
-
-
-.fase2, .final {
+.fase2 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -237,13 +238,29 @@ section {
     flex-wrap: wrap;
 }
 
-.semi1 .time, .final .time {
+.semi1 .time {
     width: 160px;
     height: max-content;
     text-align: center;
     border-radius: 25px;
     border: 2px solid orangered;
     padding: 20px;
+}
+
+.semi1 {
+    text-align: center;
+}
+
+.semi1 h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.semi2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .fase2 .resultado h4 {
@@ -256,33 +273,33 @@ section {
     gap: 10px;
 }
 
-.time p {
-    font-size: 18px;
-    padding: 5px 0;
-    color: black;
-}
 
-.time span {
-    font-size: 20px;
-    color: darkcyan;
-}
+/* ========== FINAL ========== */
 
-.rodape {
-    width: 100%;
+.final {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    height: 50px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
-.rodape img {
-    height: 100%;
+.final .time {
+    width: 160px;
+    height: max-content;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid orangered;
+    padding: 20px;
 }
 
-.cuplogo {
-    filter: invert(1);
+.final1 {
+    text-align: center;
+}
+
+.final1 h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 .final1 .resultado h6 {
@@ -304,24 +321,15 @@ section {
     border-bottom: 2px solid gray;
 }
 
-
-
-
-.semi1, .final1 {
-    text-align: center;
-}
-
-.semi1 h3, .final1 h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.semi2, .final2 {
+.final2 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
+
+
+/* ========== CAMPEAO ========== */
 
 .campeao {
     display: flex;
@@ -340,6 +348,45 @@ section {
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 700;
+}
+
+.campeao .jogador img {
+    border-radius: 50%;
+}
+
+
+/* ========== RODAPE ========== */
+
+.rodape {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+}
+
+.rodape img {
+    height: 100%;
+}
+
+.cuplogo {
+    filter: invert(1);
+}
+
+
+/* ========== GERAL ========== */
+
+.time p {
+    font-size: 18px;
+    padding: 5px 0;
+    color: black;
+}
+
+.time span {
+    font-size: 20px;
+    color: darkcyan;
 }
 
 .placar p.v {
