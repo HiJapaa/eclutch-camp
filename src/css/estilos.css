@@ -34,7 +34,7 @@ section {
 }
 
 .cabecalho .bx {
-    color: aliceblue;
+    color: var(--corFontePrincipal);
     font-size: 24px;
 }
 
@@ -46,7 +46,7 @@ section {
 .cabecalho .navBar ul li a {
     font-size: 18px;
     color: black;
-    background-color: aliceblue;
+    background-color: var(--corFontePrincipal);
     padding: 10px;
     border-radius: 10px;
 }
@@ -56,8 +56,8 @@ section {
 }
 
 .cabecalho .navBar ul li a:hover, .cabecalho .navBar a.ativo {
-    background-color: orangered;
-    color: aliceblue;
+    background-color: var(--corBorda);
+    color: var(--corFontePrincipal);
 }
 
 #menu-icon {
@@ -81,7 +81,7 @@ section {
     width: 230px;
     height: max-content;
     border-radius: 25px;
-    border: 2px solid orangered;
+    border: 2px solid var(--corBorda);
     padding: 10px;
 }
 
@@ -110,7 +110,7 @@ section {
 
 .seeds span {
     font-size: 20px;
-    color: darkcyan;
+    color: var(--corDestaque);
     font-weight: 700;
 }
 
@@ -132,7 +132,7 @@ section {
     margin: auto auto;
     text-align: center;
     border-radius: 25px;
-    border: 2px solid orangered;
+    border: 2px solid var(--corBorda);
     padding: 20px;
 }
 
@@ -149,7 +149,7 @@ section {
 
 .times .time span {
     font-size: 20px;
-    color: darkcyan;
+    color: var(--corDestaque);
 }
 
 
@@ -201,7 +201,7 @@ section {
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    border: 2px solid orangered;
+    border: 2px solid var(--corBorda);
 }
 
 .fase1 .hora .jogo p {
@@ -243,7 +243,7 @@ section {
     height: max-content;
     text-align: center;
     border-radius: 25px;
-    border: 2px solid orangered;
+    border: 2px solid var(--corBorda);
     padding: 20px;
 }
 
@@ -289,7 +289,7 @@ section {
     height: max-content;
     text-align: center;
     border-radius: 25px;
-    border: 2px solid orangered;
+    border: 2px solid var(--corBorda);
     padding: 20px;
 }
 
@@ -386,7 +386,7 @@ section {
 
 .time span {
     font-size: 20px;
-    color: darkcyan;
+    color: var(--corDestaque);
 }
 
 .placar p.v {

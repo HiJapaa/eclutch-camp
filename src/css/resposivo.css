@@ -89,7 +89,7 @@
     .campeao .jogador {
         padding: 20px;
         margin: auto auto;
-        border: 2px solid orangered;
+        border: 2px solid var(--corBorda);
         border-radius: 25px;
         text-align: center;
         width: 200px;
