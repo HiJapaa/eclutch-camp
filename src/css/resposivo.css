@@ -1,9 +1,5 @@
 @media (max-width: 1325px) {
 
-    section {
-        height: auto;
-    }
-
     .times {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -26,10 +22,10 @@
     }
 }
 
-@media (max-width: 835px) {
-
-
+@media (max-width: 935px) {
+    
     section {
+        height: auto;
         padding: 9rem 6% 3rem;
     }
 
@@ -59,6 +55,28 @@
         display: block;
     }
 
+    .campeao {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .campeao div:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .campeao .jogador {
+        padding: 20px;
+        margin: auto auto;
+        border: 2px solid var(--corBorda);
+        border-radius: 25px;
+        text-align: center;
+        width: 250px;
+    }
+}
+
+@media (max-width: 835px) {
+
     .seeds {
         display: grid;
         gap: 25px;
@@ -72,26 +90,20 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .rodape {
-        background-color: black;
-        position: static;
-    }
-
     .cuplogo {
-        filter: invert(0);
+        filter: invert(1);
     }
 
     .campeao {
-        display: grid;
         grid-template-columns: 1fr;
     }
 
+    .campeao div:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
     .campeao .jogador {
-        padding: 20px;
-        margin: auto auto;
-        border: 2px solid var(--corBorda);
-        border-radius: 25px;
-        text-align: center;
         width: 200px;
     }
 
@@ -139,9 +151,16 @@
     }
 
     .fase1 {
+        height: auto;
         display: flex;
-        flex-direction: column;
         gap: 50px;
+    }
+
+    .rodape {
+        width: 35px;
+        bottom: 50%;
+        left: 25px;
+        flex-direction: column;
     }
 
     .resultado.pc {
