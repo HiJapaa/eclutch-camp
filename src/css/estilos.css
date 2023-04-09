@@ -49,15 +49,30 @@ section {
     background-color: var(--corFontePrincipal);
     padding: 10px;
     border-radius: 10px;
-}
-
-.cabecalho .navBar ul li a {
     transition: .4s;
 }
 
 .cabecalho .navBar ul li a:hover, .cabecalho .navBar a.ativo {
     background-color: var(--corBorda);
     color: var(--corFontePrincipal);
+}
+
+.menus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.cabecalho .discord {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.cabecalho .discord:hover {
+    transform: scale(1.1);
 }
 
 #menu-icon {
