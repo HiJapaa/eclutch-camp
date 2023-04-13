@@ -142,7 +142,7 @@ section {
 }
 
 .times .time {
-    min-width: 160px;
+    width: 260px;
     height: max-content;
     margin: auto auto;
     text-align: center;
