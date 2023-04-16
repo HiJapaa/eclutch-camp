@@ -326,6 +326,7 @@ section {
     display: flex;
     margin-top: 5px;
     gap: 10px;
+    justify-content: center;
 }
 
 .final1 .mapa {
