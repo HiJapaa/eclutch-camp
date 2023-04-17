@@ -13,6 +13,10 @@
 
 @media (max-width: 1210px) {
 
+    section {
+        height: auto;
+    }
+
     .seeds {
         gap: 35px 100px;
     }
@@ -25,7 +29,6 @@
 @media (max-width: 935px) {
     
     section {
-        height: auto;
         padding: 9rem 6% 3rem;
     }
 
