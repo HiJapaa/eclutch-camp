@@ -107,6 +107,12 @@
         width: 200px;
     }
 
+    .campeao .jogador img {
+        width: 125px;
+        height: 125px;
+        align-self: center;
+    }
+
     .celular {
         display: block;
         text-align: center;
